@@ -7,19 +7,28 @@ class Bird {
     this.lift = -10;
     this.velocity = 0;
 
-    this.icon = birdSprite;
-    this.width = 64;
-    this.height = 64;
+    this.brain = new NeuralNetwork (4,4,1);
+
+
   }
 
   show() {
-    // draw the icon CENTERED around the X and Y coords of the bird object
-    image(this.icon, this.x - this.width / 2, this.y - this.height / 2, this.width, this.height);
+    fill (255);
+    ellipse (this.x,this.y,32,32);
   }
 
   up() {
     this.velocity = this.lift;
   }
+
+think(){
+
+let inputs = [1.0, 0.5,0.2, 0.3];
+  let output = this.brain.predict();
+  if (output>0.5){
+    this.up();
+  }
+}
 
   update() {
     this.velocity += this.gravity;
