@@ -21,9 +21,14 @@ class Bird {
     this.velocity = this.lift;
   }
 
-think(){
+think(pipes){
+let inputs [];
+inputs[0]=this.y;
+inputs[1]=pipes[0].top;
+inputs[2]=pipes[0].bottom;
+inputs[3]=pipes[0].x.;
 
-let inputs = [1.0, 0.5,0.2, 0.3];
+
   let output = this.brain.predict();
   if (output>0.5){
     this.up();
