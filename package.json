@@ -4,6 +4,7 @@
   "description": "Neural Network Flappy Bird",
   "main": "index.js",
   "dependencies": {
+    "function-pipe": "^1.2.1",
     "matrix-js": "^1.4.0"
   },
   "devDependencies": {},
