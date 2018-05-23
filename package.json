@@ -1,0 +1,23 @@
+{
+  "name": "3erparcialadc",
+  "version": "1.0.0",
+  "description": "Neural Network Flappy Bird",
+  "main": "index.js",
+  "dependencies": {
+    "matrix-js": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herbertdubon/3erParcialADC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herbertdubon/3erParcialADC/issues"
+  },
+  "homepage": "https://github.com/herbertdubon/3erParcialADC#readme"
+}
