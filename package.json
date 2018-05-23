@@ -6,7 +6,8 @@
   "dependencies": {
     "bird": "^0.7.0",
     "function-pipe": "^1.2.1",
-    "matrix-js": "^1.4.0"
+    "matrix-js": "^1.4.0",
+    "nnjs": "0.0.3"
   },
   "devDependencies": {},
   "scripts": {
