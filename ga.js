@@ -56,3 +56,30 @@ function normalizeFitness(birds)
         birds[i].fitness = birds[i].score / sum;
     }
 }
+
+//Seleccionamos un pajaro de un arreglo
+
+function poolSelection (birds){
+
+    //Empezando en 0 
+    let index = 0;
+
+    //Seleccionar un numero random entre 0 y 1
+    let r = random(1);
+
+    //Loop para restar probabilidades hasta obtener menos de 0
+
+    while (r > 0) {
+    r -= birds[index].fitness;
+    index += 1;
+  }
+
+  //Regresar 1
+
+  index -= 1;
+
+  //Asegurar que sea una copia del index
+
+  return birds[index].copy();
+
+} 
