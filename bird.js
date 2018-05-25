@@ -22,14 +22,14 @@ class Bird {
   }
 
 think(pipes){
+  let closest = pipes[0];
+
 let inputs [];
-inputs[0]=this.y;
-inputs[1]=pipes[0].top;
-inputs[2]=pipes[0].bottom;
-inputs[3]=pipes[0].x.;
-
-
-  let output = this.brain.predict();
+inputs[0]=this.y/height;
+inputs[1]=pipes[0].top/height;
+inputs[2]=pipes[0].bottom/height;
+inputs[3]=pipes[0].x/with;
+let output = this.brain.predict(inputs);
   if (output>0.5){
     this.up();
   }
