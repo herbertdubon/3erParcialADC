@@ -10,9 +10,10 @@ function mutate(x) {
 }
 
 class Bird {
-  constructor() {
-    this.y = height / 2;
+  constructor(brain) {
     this.x = 64;
+    this.y = height / 2;
+    this.r = 12;
 
     this.gravity = 0.8;
     this.lift = -12;
