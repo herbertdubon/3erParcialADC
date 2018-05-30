@@ -48,11 +48,11 @@ function toggleState() {
   // Muestra la mejor ave.
   if (runBest) {
     resetGame();
-    runBestButton.html('continue training');
+    runBestButton.html('Continuar entrenamiento');
     // Continuar entrenando.
   } else {
     nextGeneration();
-    runBestButton.html('run best');
+    runBestButton.html('Mejor Pajaro');
   }
 }
 

@@ -19,7 +19,7 @@ class Bird {
     this.lift = -12;
     this.velocity = 0;
 
-    //La red neural es el cerebro del pajaro
+    //La red neuronal es el cerebro del pajaro
     if (brain instanceof NeuralNetwork) {
       this.brain = brain.copy();
       this.brain.mutate(mutate);
